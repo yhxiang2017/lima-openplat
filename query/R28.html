@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.2.7 到期保单查询(R28) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="R29.html" />
+    
+    
+    <link rel="prev" href="R27.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1.介绍
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../other/readme.html">
+            
+                <a href="../other/readme.html">
+            
+                    
+                    2.接口对接
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    2.1 回传接口
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../callback/C01.html">
+            
+                <a href="../callback/C01.html">
+            
+                    
+                    2.1.1 订单数据回传(C01)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../callback/C02.html">
+            
+                <a href="../callback/C02.html">
+            
+                    
+                    2.1.2 保单数据回传(C02)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../callback/C05.html">
+            
+                <a href="../callback/C05.html">
+            
+                    
+                    2.1.3 续期结果通知(C05)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../callback/C10.html">
+            
+                <a href="../callback/C10.html">
+            
+                    
+                    2.1.4 续保成功通知(C10)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../callback/C11.html">
+            
+                <a href="../callback/C11.html">
+            
+                    
+                    2.1.5 回访状态通知(C11)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../callback/C12.html">
+            
+                <a href="../callback/C12.html">
+            
+                    
+                    2.1.6 退保状态通知(C12)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../callback/C13.html">
+            
+                <a href="../callback/C13.html">
+            
+                    
+                    2.1.7 人核状态变更通知(C13)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../callback/C16.html">
+            
+                <a href="../callback/C16.html">
+            
+                    
+                    2.1.8 订单关闭时间变更通知(C16)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../callback/C17.html">
+            
+                <a href="../callback/C17.html">
+            
+                    
+                    2.1.9 推广费变更通知(C17)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../callback/C18.html">
+            
+                <a href="../callback/C18.html">
+            
+                    
+                    2.1.10 回执状态通知(C18)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    2.2 查询接口
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="R22.html">
+            
+                <a href="R22.html">
+            
+                    
+                    2.2.1 获取电子保单链接(R22)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="R23.html">
+            
+                <a href="R23.html">
+            
+                    
+                    2.2.2 获取继续支付链接(R23)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="R24.html">
+            
+                <a href="R24.html">
+            
+                    
+                    2.2.3 产品列表查询(R24)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="R25.html">
+            
+                <a href="R25.html">
+            
+                    
+                    2.2.4 保单状态查询(R25)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="R26.html">
+            
+                <a href="R26.html">
+            
+                    
+                    2.2.5 保单列表查询(R26)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="R27.html">
+            
+                <a href="R27.html">
+            
+                    
+                    2.2.6 保单详情查询(R27)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.7" data-path="R28.html">
+            
+                <a href="R28.html">
+            
+                    
+                    2.2.7 到期保单查询(R28)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="R29.html">
+            
+                <a href="R29.html">
+            
+                    
+                    2.2.8 订单数据查询(R29)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="R30.html">
+            
+                <a href="R30.html">
+            
+                    
+                    2.2.9 回执数据查询(R30)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.10" data-path="R31.html">
+            
+                <a href="R31.html">
+            
+                    
+                    2.2.10 回访数据查询(R31)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.11" data-path="R32.html">
+            
+                <a href="R32.html">
+            
+                    
+                    2.2.11 续期数据查询(R32)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.12" data-path="R33.html">
+            
+                <a href="R33.html">
+            
+                    
+                    2.2.12 订单详情查询(R33)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3.码表
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../dict/policyStatus.html">
+            
+                <a href="../dict/policyStatus.html">
+            
+                    
+                    3.1 保单状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../dict/ackStatus.html">
+            
+                <a href="../dict/ackStatus.html">
+            
+                    
+                    3.2 回执回访状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../dict/cardType.html">
+            
+                <a href="../dict/cardType.html">
+            
+                    
+                    3.3 证件类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../dict/relation.html">
+            
+                <a href="../dict/relation.html">
+            
+                    
+                    3.4 关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4.常见问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.2.7 到期保单查询(R28)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;"><b>1. </b>&#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;"><b>1.1. </b>&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;"><b>1.2. </b>&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;</a></li><li><span class="title-icon "></span><a href="#&#x8BF7;&#x6C42;&#x5165;&#x53C2;"><b>1.3. </b>&#x8BF7;&#x6C42;&#x5165;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x5165;&#x53C2;&#x793A;&#x4F8B;"><b>1.4. </b>&#x5165;&#x53C2;&#x793A;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x53C2;&#x6570;"><b>1.5. </b>&#x8FD4;&#x56DE;&#x53C2;&#x6570;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x793A;&#x4F8B;"><b>1.6. </b>&#x8FD4;&#x56DE;&#x793A;&#x4F8B;</a></li></ul></ul></div><a href="#&#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;"><a name="&#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5230;&#x671F;&#x4FDD;&#x5355;&#x67E5;&#x8BE2;</h1>
+<blockquote>
+<p><strong>TODO:&#x6682;&#x65F6;&#x4E0D;&#x5199;</strong> 
+&#x53EF;&#x901A;&#x8FC7;&#x8BE5;&#x63A5;&#x53E3;&#x67E5;&#x8BE2;&#x5373;&#x5C06;&#x5230;&#x671F;&#x7684;&#x4FDD;&#x5355;&#x6E05;&#x5355;&#xFF0C;&#x5E76;&#x80FD;&#x591F;&#x83B7;&#x53D6;&#x5230;&#x652F;&#x6301;&#x8FDE;&#x7EED;&#x6295;&#x4FDD;&#x4EA7;&#x54C1;&#x7684;&#x7EED;&#x4FDD;&#x94FE;&#x63A5;</p>
+</blockquote>
+<h2 id="&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;"><a name="&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x8BF7;&#x6C42;&#x65B9;&#x6CD5;</h2>
+<p><strong>POST</strong></p>
+<h2 id="&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;"><a name="&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x8BF7;&#x6C42;&#x8DEF;&#x5F84;</h2>
+<blockquote>
+<p><code>/rainforest/service/gateway/v6/tenant/waitRenewPolicyList</code></p>
+</blockquote>
+<h2 id="&#x8BF7;&#x6C42;&#x5165;&#x53C2;"><a name="&#x8BF7;&#x6C42;&#x5165;&#x53C2;" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x6C42;&#x5165;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x8BF7;&#x6C42;&#x5165;&#x53C2;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5B57;&#x6BB5;</th>
+<th style="text-align:left">&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x5927;&#x5C0F;</th>
+<th style="text-align:left">&#x5FC5;&#x4F20;</th>
+<th style="text-align:left">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">startTime</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x5F00;&#x59CB;&#x65F6;&#x95F4;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">C</td>
+<td style="text-align:left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td style="text-align:left">endTime</td>
+<td style="text-align:left">&#x67E5;&#x8BE2;&#x7ED3;&#x675F;&#x65F6;&#x95F4;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">C</td>
+<td style="text-align:left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5165;&#x53C2;&#x793A;&#x4F8B;"><a name="&#x5165;&#x53C2;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5165;&#x53C2;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5165;&#x53C2;&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;messageHead&quot;</span>:
+    {
+        <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;requestType&quot;</span>: <span class="hljs-string">&quot;R28&quot;</span>,
+        <span class="hljs-string">&quot;uuid&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;sendTime&quot;</span>: <span class="hljs-string">&quot;2023-03-20&quot;</span>
+    },
+    <span class="hljs-string">&quot;request&quot;</span>:
+    {
+        <span class="hljs-string">&quot;startTime&quot;</span>: <span class="hljs-string">&quot;2023-03-20 00:00:00&quot;</span>,
+        <span class="hljs-string">&quot;endTime&quot;</span>: <span class="hljs-string">&quot;2023-03-20 23:59:59&quot;</span>
+    }
+}
+</code></pre>
+<h2 id="&#x8FD4;&#x56DE;&#x53C2;&#x6570;"><a name="&#x8FD4;&#x56DE;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x8FD4;&#x56DE;&#x53C2;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5B57;&#x6BB5;</th>
+<th style="text-align:left">&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x5927;&#x5C0F;</th>
+<th style="text-align:left">&#x5FC5;&#x4F20;</th>
+<th style="text-align:left">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">data</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x96C6;&#x5408;</td>
+<td style="text-align:left">list</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].ackStatus</td>
+<td style="text-align:left">&#x56DE;&#x6267;&#x56DE;&#x8BBF;&#x72B6;&#x6001;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left">&#x89C1;<a href="../dict/ackStatus.html">&#x56DE;&#x6267;&#x56DE;&#x8BBF;&#x72B6;&#x6001;</a></td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].hesitatedTime</td>
+<td style="text-align:left">&#x72B9;&#x8C6B;&#x671F;</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].holderName</td>
+<td style="text-align:left">&#x6295;&#x4FDD;&#x4EBA;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].policyId</td>
+<td style="text-align:left">&#x4FDD;&#x5355;id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].premium</td>
+<td style="text-align:left">&#x4FDD;&#x8D39;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left">&#x5355;&#x4F4D;: &#x5206;</td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].spuName</td>
+<td style="text-align:left">&#x4EA7;&#x54C1;&#x540D;&#x5B57;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].startedTime</td>
+<td style="text-align:left">&#x751F;&#x6548;&#x65F6;&#x95F4;</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">M</td>
+<td style="text-align:left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].policyStatus</td>
+<td style="text-align:left">&#x4FDD;&#x5355;&#x72B6;&#x6001;</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">C</td>
+<td style="text-align:left">&#x89C1;<a href="../dict/policyStatus.html">&#x4FDD;&#x5355;&#x72B6;&#x6001;</a></td>
+</tr>
+<tr>
+<td style="text-align:left">data[0].acceptedTime</td>
+<td style="text-align:left">&#x627F;&#x4FDD;&#x65F6;&#x95F4;</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">C</td>
+<td style="text-align:left">yyyy-MM-dd HH:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8FD4;&#x56DE;&#x793A;&#x4F8B;"><a name="&#x8FD4;&#x56DE;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x8FD4;&#x56DE;&#x793A;&#x4F8B;</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;messageHead&quot;</span>:
+    {
+        <span class="hljs-string">&quot;asyn&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+        <span class="hljs-string">&quot;channelId&quot;</span>: <span class="hljs-string">&quot;1308911097474727936&quot;</span>,
+        <span class="hljs-string">&quot;messageCode&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
+        <span class="hljs-string">&quot;messageDesc&quot;</span>: <span class="hljs-string">&quot;&#x63A5;&#x53E3;&#x6210;&#x529F;&#x6267;&#x884C;&quot;</span>,
+        <span class="hljs-string">&quot;requestType&quot;</span>: <span class="hljs-string">&quot;R28&quot;</span>,
+        <span class="hljs-string">&quot;UUID&quot;</span>: <span class="hljs-string">&quot;0000646d222657984c429d350865555f439c&quot;</span>,
+        <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;1.0&quot;</span>
+    },
+    <span class="hljs-string">&quot;response&quot;</span>:
+    {
+        <span class="hljs-string">&quot;data&quot;</span>:
+        [
+            {
+                <span class="hljs-string">&quot;ackStatus&quot;</span>: <span class="hljs-string">&quot;DHF&quot;</span>,
+                <span class="hljs-string">&quot;hesitatedTime&quot;</span>: <span class="hljs-string">&quot;2021-06-17 00:00:00&quot;</span>,
+                <span class="hljs-string">&quot;holderName&quot;</span>: <span class="hljs-string">&quot;&#x5F20;&#x864E;&quot;</span>,
+                <span class="hljs-string">&quot;policyId&quot;</span>: <span class="hljs-string">&quot;2125623000066427&quot;</span>,
+                <span class="hljs-string">&quot;premium&quot;</span>: <span class="hljs-string">&quot;100000.0000&quot;</span>,
+                <span class="hljs-string">&quot;spuName&quot;</span>: <span class="hljs-string">&quot;&#x548C;&#x6CF0;&#x589E;&#x591A;&#x591A;&#x589E;&#x989D;&#x7EC8;&#x8EAB;&#x5BFF;&#xFF08;10 &#x5E74;&#x4EA4;&#xFF09;&quot;</span>,
+                <span class="hljs-string">&quot;startedTime&quot;</span>: <span class="hljs-string">&quot;2021-06-03 00:00:00&quot;</span>,
+                <span class="hljs-string">&quot;acceptedTime&quot;</span>: <span class="hljs-string">&quot;2021-06-03 00:00:00&quot;</span>,
+                <span class="hljs-string">&quot;policyStatus&quot;</span>: <span class="hljs-string">&quot;CB&quot;</span>
+            }
+        ]
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="R27.html" class="navigation navigation-prev " aria-label="Previous page: 2.2.6 保单详情查询(R27)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="R29.html" class="navigation navigation-next " aria-label="Next page: 2.2.8 订单数据查询(R29)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.2.7 到期保单查询(R28)","level":"1.3.2.7","depth":3,"next":{"title":"2.2.8 订单数据查询(R29)","level":"1.3.2.8","depth":3,"path":"query/R29.md","ref":"query/R29.md","articles":[]},"previous":{"title":"2.2.6 保单详情查询(R27)","level":"1.3.2.6","depth":3,"path":"query/R27.md","ref":"query/R27.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","auto-scroll-table","livereload","copy-code-button","anchor-navigation-ex","hide-element","-lunr","-search","search-pro","livereload"],"pluginsConfig":{"livereload":{},"search-pro":{},"auto-scroll-table":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"query/R28.md","mtime":"2023-03-22T10:16:15.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-24T08:22:30.353Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
